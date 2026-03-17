@@ -1,13 +1,18 @@
+#!/bin/sh
+PORT=${PORT:-8080}
+cat > /etc/nginx/conf.d/default.conf <<EOF
 server {
-    listen 8080;
+    listen ${PORT};
     server_name _;
     root /usr/share/nginx/html;
     index index.html;
 
     location / {
-        try_files $uri $uri/ /index.html;
+        try_files \$uri \$uri/ /index.html;
     }
 
     gzip on;
     gzip_types text/css application/javascript image/jpeg image/png;
 }
+EOF
+nginx -g 'daemon off;'
