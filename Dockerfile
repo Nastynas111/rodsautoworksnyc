@@ -1,5 +1,6 @@
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx.conf.template /etc/nginx/templates/default.conf.template
-EXPOSE 8080
+FROM node:20-alpine
+WORKDIR /app
+COPY . .
+RUN npm install -g serve
+EXPOSE 3000
+CMD ["sh", "-c", "serve -s /app -l ${PORT:-3000}"]
