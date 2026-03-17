@@ -1,5 +1,5 @@
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
-ENTRYPOINT ["/start.sh"]
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf.template /etc/nginx/templates/default.conf.template
+EXPOSE 8080
