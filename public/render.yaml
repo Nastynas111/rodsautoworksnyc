@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: rodsautoworksnyc
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false

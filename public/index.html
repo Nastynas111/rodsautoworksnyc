@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rods AutoWorks — Astoria's premier auto body shop. Collision repair, paint, window tinting, and 24/7 emergency towing in Queens, NY." />
+  <title>Rods AutoWorks | Auto Body & Collision Repair — Astoria, NY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <img src="logo.jpg" alt="Rods AutoWorks" class="nav__logo-img" />
+          <div class="nav__logo-text">
+            <span class="nav__logo-name">Rods AutoWorks</span>
+            <span class="nav__logo-tag">Astoria, NY</span>
+          </div>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="towing.html">Towing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a href="tel:9293504707" class="nav__phone">(929) 350-4707</a>
+          <a href="towing.html" class="btn btn--primary">24/7 Towing</a>
+        </div>
+
+        <button class="nav__hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="towing.html">Towing</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:9293504707" class="nav__mobile-phone">(929) 350-4707</a>
+  </div>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="hero-night.jpg" alt="Rods AutoWorks shop at night" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          <span class="hero__eyebrow-text">Astoria, Queens — Est. Since Day One</span>
+        </div>
+
+        <h1 class="hero__title">
+          Rods<br />
+          <span>Auto</span><br />
+          Works
+        </h1>
+
+        <p class="hero__sub">
+          Collision repair, auto body &amp; paint, window tinting, and 24/7 emergency towing. We fix it right — every time.
+        </p>
+
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--primary btn--lg">Get a Free Estimate</a>
+          <a href="towing.html" class="btn btn--outline btn--lg">Emergency Towing ↗</a>
+        </div>
+
+        <div class="hero__stats">
+          <div>
+            <span class="hero__stat-num" data-count="76">0</span>
+            <span class="hero__stat-label">Google Reviews</span>
+          </div>
+          <div>
+            <span class="hero__stat-num">4.2★</span>
+            <span class="hero__stat-label">Rating</span>
+          </div>
+          <div>
+            <span class="hero__stat-num">24/7</span>
+            <span class="hero__stat-label">Emergency Towing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#services" class="hero__scroll" aria-label="Scroll down">
+      <div class="hero__scroll-line"></div>
+      <span class="hero__scroll-text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ── Trust Bar ──────────────────────────────────────────── -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-bar__inner">
+        <div class="trust-bar__item">
+          <span class="trust-bar__icon">🛡️</span>
+          <span class="trust-bar__text">Insurance Claims Handled</span>
+        </div>
+        <div class="trust-bar__item">
+          <span class="trust-bar__icon">🚗</span>
+          <span class="trust-bar__text">All Makes &amp; Models</span>
+        </div>
+        <div class="trust-bar__item">
+          <span class="trust-bar__icon">🔧</span>
+          <span class="trust-bar__text">Expert Technicians</span>
+        </div>
+        <div class="trust-bar__item">
+          <span class="trust-bar__icon">🚨</span>
+          <span class="trust-bar__text">24/7 Emergency Towing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Services ───────────────────────────────────────────── -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Full-Service Auto Body &amp; Repair</h2>
+        <div class="divider"></div>
+        <p class="section-sub">From minor dents to major collision damage — we handle it all with precision and care.</p>
+      </div>
+
+      <div class="services-grid" style="margin-top: 3rem;">
+        <div class="service-card reveal reveal--delay-1">
+          <div class="service-card__icon">🔨</div>
+          <h3 class="service-card__title">Collision Repair</h3>
+          <p class="service-card__text">Frame straightening, panel replacement, and structural repairs after any accident. We restore your vehicle to factory spec.</p>
+          <a href="services.html#collision" class="service-card__link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-2">
+          <div class="service-card__icon">🎨</div>
+          <h3 class="service-card__title">Auto Body &amp; Paint</h3>
+          <p class="service-card__text">Color-matched paint jobs, full respray, and spot repairs. We use premium materials for a factory-fresh finish.</p>
+          <a href="services.html#paint" class="service-card__link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-3">
+          <div class="service-card__icon">🪟</div>
+          <h3 class="service-card__title">Window Tinting</h3>
+          <p class="service-card__text">Professional-grade tint film in multiple shades. UV protection, heat reduction, and a clean sleek look.</p>
+          <a href="services.html#tinting" class="service-card__link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-1">
+          <div class="service-card__icon">🚛</div>
+          <h3 class="service-card__title">24/7 Emergency Towing</h3>
+          <p class="service-card__text">Stuck anywhere in Queens, Brooklyn, or the Bronx? We're on the road for you around the clock, any day of the year.</p>
+          <a href="towing.html" class="service-card__link">Call Now →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-2">
+          <div class="service-card__icon">📋</div>
+          <h3 class="service-card__title">Insurance Claims</h3>
+          <p class="service-card__text">We work directly with your insurance company, handle all paperwork, and make the process as smooth as possible.</p>
+          <a href="services.html#insurance" class="service-card__link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-3">
+          <div class="service-card__icon">💧</div>
+          <h3 class="service-card__title">Dent Removal</h3>
+          <p class="service-card__text">Paintless dent repair for minor dings and dents. Fast, affordable, and leaves your original paint intact.</p>
+          <a href="services.html#dents" class="service-card__link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-1">
+          <div class="service-card__icon">🔍</div>
+          <h3 class="service-card__title">Glass Repair</h3>
+          <p class="service-card__text">Windshield chip repair, full windshield replacement, and side/rear glass. Safe, sealed, and road-ready.</p>
+          <a href="services.html#glass" class="service-card__link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal reveal--delay-2">
+          <div class="service-card__icon">✨</div>
+          <h3 class="service-card__title">Detailing</h3>
+          <p class="service-card__text">Interior and exterior detailing that makes your car look showroom-new. Perfect before a sale or just because you care.</p>
+          <a href="services.html#detailing" class="service-card__link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Band ────────────────────────────────────────────── -->
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Accident? Breakdown?<br />We're Here 24/7.</h2>
+          <p class="cta-band__sub">Emergency towing available around the clock — Queens, Brooklyn &amp; beyond.</p>
+        </div>
+        <a href="tel:9293504707" class="btn btn--dark btn--lg">(929) 350-4707</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── About ───────────────────────────────────────────────── -->
+  <section class="section--lg" style="background: var(--bg-1);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <img src="shop-day.jpg" alt="Rods AutoWorks shop in Astoria" />
+          <div class="about-img-badge">
+            <strong>4.2★</strong>
+            <span>76 Reviews</span>
+          </div>
+        </div>
+
+        <div class="reveal reveal--delay-2">
+          <span class="section-label">About the Shop</span>
+          <h2 class="section-title">Astoria's Trusted Auto Body Shop</h2>
+          <div class="divider"></div>
+          <p style="color: var(--gray-2); line-height: 1.75; margin-bottom: 1.5rem;">
+            Located on the Brooklyn-Queens Expressway in Astoria, Rods AutoWorks has built a reputation for honest work, fair prices, and results that speak for themselves. From luxury sedans to work trucks, we treat every vehicle like it's our own.
+          </p>
+          <p style="color: var(--gray-2); line-height: 1.75; margin-bottom: 2rem;">
+            Our team of certified technicians brings decades of combined experience to every repair. We use the latest tools and top-tier materials to ensure your car comes out better than before.
+          </p>
+
+          <ul class="about-list">
+            <li>Certified collision repair specialists</li>
+            <li>Color-matching technology for seamless paint</li>
+            <li>Direct billing with all major insurance carriers</li>
+            <li>Free estimates — no obligation</li>
+            <li>Serving Astoria, Queens, Brooklyn &amp; the Bronx</li>
+          </ul>
+
+          <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn--primary">Free Estimate</a>
+            <a href="gallery.html" class="btn btn--ghost">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal text-center" style="margin-bottom: 3rem;">
+        <span class="section-label">What Customers Say</span>
+        <h2 class="section-title">4.2★ on Google — 76 Reviews</h2>
+        <div class="divider divider--center"></div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal reveal--delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Rod and his crew did an amazing job on my car after a fender bender. The paint match was perfect — you'd never know anything happened."</p>
+          <div class="review-author">Marcus T.</div>
+          <div class="review-date">Queens, NY</div>
+        </div>
+
+        <div class="review-card reveal reveal--delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Called at 2am when my car broke down on the BQE. They were there in 20 minutes. Absolute lifesavers. Will definitely bring my car here for bodywork too."</p>
+          <div class="review-author">Diana R.</div>
+          <div class="review-date">Astoria, NY</div>
+        </div>
+
+        <div class="review-card reveal reveal--delay-3">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Brought my Mercedes in for a dent — they fixed it without touching the paint. Reasonable price and they were done in a day. Highly recommend."</p>
+          <div class="review-author">James L.</div>
+          <div class="review-date">Long Island City, NY</div>
+        </div>
+
+        <div class="review-card reveal reveal--delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"They handled everything with my insurance company directly. Took so much stress off my shoulders. Great shop, great people."</p>
+          <div class="review-author">Sofia M.</div>
+          <div class="review-date">Jackson Heights, NY</div>
+        </div>
+
+        <div class="review-card reveal reveal--delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The window tint they did on my Camry is flawless. No bubbles, clean edges — exactly the shade I wanted. Worth every penny."</p>
+          <div class="review-author">Andre W.</div>
+          <div class="review-date">Brooklyn, NY</div>
+        </div>
+
+        <div class="review-card reveal reveal--delay-3">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Used them for towing twice this year. Both times, fast response and professional drivers. Definitely my go-to in Queens."</p>
+          <div class="review-author">Patricia C.</div>
+          <div class="review-date">Sunnyside, NY</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Rods AutoWorks</div>
+          <div class="footer__brand-tag">Astoria, New York</div>
+          <p class="footer__brand-text">
+            Full-service auto body, collision repair, and 24/7 emergency towing. Serving Astoria, Queens, Brooklyn, and beyond.
+          </p>
+          <a href="tel:9293504707" class="footer__phone">(929) 350-4707</a>
+          <div class="footer__address">
+            23-54 Brooklyn Queens Expy W<br />
+            Astoria, NY 11103
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="towing.html">24/7 Towing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html#collision">Collision Repair</a></li>
+            <li><a href="services.html#paint">Auto Body &amp; Paint</a></li>
+            <li><a href="services.html#tinting">Window Tinting</a></li>
+            <li><a href="services.html#dents">Dent Removal</a></li>
+            <li><a href="services.html#glass">Glass Repair</a></li>
+            <li><a href="services.html#detailing">Detailing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Hours</div>
+          <div class="footer__hours-row js-hours-row" data-day="1"><span>Monday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="2"><span>Tuesday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="3"><span>Wednesday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="4"><span>Thursday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="5"><span>Friday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="6"><span>Saturday</span><span>9am – 4pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="0"><span>Sunday</span><span>Towing Only</span></div>
+          <div style="margin-top: 1rem; font-size: 0.8rem; color: var(--accent);">🚨 Towing: 24/7 Always</div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copy">© 2025 Rods AutoWorks. All rights reserved.</div>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Google">G</a>
+        </div>
+        <div class="footer__credit">Built by <a href="https://levainestudio.com" target="_blank" rel="noopener">Levaine Studio</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

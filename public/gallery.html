@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rods AutoWorks photo gallery — see our collision repairs, paint jobs, window tinting, and detailing work in Astoria, NY." />
+  <title>Gallery | Rods AutoWorks — Astoria, NY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <img src="logo.jpg" alt="Rods AutoWorks" class="nav__logo-img" />
+          <div class="nav__logo-text">
+            <span class="nav__logo-name">Rods AutoWorks</span>
+            <span class="nav__logo-tag">Astoria, NY</span>
+          </div>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="towing.html">Towing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a href="tel:9293504707" class="nav__phone">(929) 350-4707</a>
+          <a href="towing.html" class="btn btn--primary">24/7 Towing</a>
+        </div>
+
+        <button class="nav__hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="towing.html">Towing</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:9293504707" class="nav__mobile-phone">(929) 350-4707</a>
+  </div>
+
+  <!-- ── Page Hero ───────────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="shop-day.jpg" alt="Rods AutoWorks shop" />
+      <div class="page-hero__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">→</span>
+          <span>Gallery</span>
+        </nav>
+        <h1 class="page-hero__title">Our Work</h1>
+        <p class="page-hero__sub">Before &amp; after transformations, collision repairs, custom paint, and more — see what we can do for your vehicle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Gallery ─────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filter reveal">
+        <button class="gallery-filter-btn active" data-filter="all">All Work</button>
+        <button class="gallery-filter-btn" data-filter="collision">Collision Repair</button>
+        <button class="gallery-filter-btn" data-filter="paint">Paint &amp; Body</button>
+        <button class="gallery-filter-btn" data-filter="tinting">Window Tinting</button>
+        <button class="gallery-filter-btn" data-filter="detailing">Detailing</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid reveal">
+
+        <!-- Item 1: Large feature -->
+        <div class="gallery-item" data-category="collision">
+          <img src="mercedes-shop.jpg" alt="Mercedes collision repair in progress at Rods AutoWorks" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="paint">
+          <img src="shop-day.jpg" alt="Auto body and paint work at Rods AutoWorks" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="collision">
+          <img src="hero-night.jpg" alt="Night shop view at Rods AutoWorks Astoria" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Items 4–11: Placeholders for future photos -->
+        <div class="gallery-item" data-category="paint">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">🎨</div>
+            <div class="gallery-placeholder__text">Paint Job</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tinting">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">🪟</div>
+            <div class="gallery-placeholder__text">Window Tint</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="collision">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">🔨</div>
+            <div class="gallery-placeholder__text">Collision Repair</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="detailing">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">✨</div>
+            <div class="gallery-placeholder__text">Detailing</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="paint">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">🎨</div>
+            <div class="gallery-placeholder__text">Custom Paint</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="collision">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">🔧</div>
+            <div class="gallery-placeholder__text">Frame Repair</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tinting">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">🪟</div>
+            <div class="gallery-placeholder__text">Tint Install</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="detailing">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder__icon">✨</div>
+            <div class="gallery-placeholder__text">Interior Detail</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More / CTA -->
+      <div style="text-align: center; margin-top: 3rem;" class="reveal">
+        <p style="color: var(--gray-3); font-size: 0.9rem; margin-bottom: 1.5rem;">More photos coming soon. Follow us on Instagram for the latest transformations.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn--primary">Get a Free Estimate</a>
+          <a href="services.html" class="btn btn--ghost">View Our Services</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Stats Band ──────────────────────────────────────────── -->
+  <div style="background: var(--bg-2); border-top: 1px solid var(--gray-4); border-bottom: 1px solid var(--gray-4); padding: 60px 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+        <div class="reveal reveal--delay-1">
+          <div style="font-family: var(--font-head); font-size: 3.5rem; color: var(--accent); line-height: 1;" data-count="500">0</div>
+          <div style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-2); margin-top: 0.5rem;">Vehicles Repaired</div>
+        </div>
+        <div class="reveal reveal--delay-2">
+          <div style="font-family: var(--font-head); font-size: 3.5rem; color: var(--accent); line-height: 1;" data-count="76">0</div>
+          <div style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-2); margin-top: 0.5rem;">5-Star Reviews</div>
+        </div>
+        <div class="reveal reveal--delay-3">
+          <div style="font-family: var(--font-head); font-size: 3.5rem; color: var(--accent); line-height: 1;">24/7</div>
+          <div style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-2); margin-top: 0.5rem;">Towing Service</div>
+        </div>
+        <div class="reveal reveal--delay-4">
+          <div style="font-family: var(--font-head); font-size: 3.5rem; color: var(--accent); line-height: 1;" data-count="100">0</div>
+          <div style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-2); margin-top: 0.5rem;">% Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA Band ────────────────────────────────────────────── -->
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Want Results Like These?</h2>
+          <p class="cta-band__sub">Come in for a free estimate — we'll walk you through everything.</p>
+        </div>
+        <a href="tel:9293504707" class="btn btn--dark btn--lg">(929) 350-4707</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Rods AutoWorks</div>
+          <div class="footer__brand-tag">Astoria, New York</div>
+          <p class="footer__brand-text">Full-service auto body, collision repair, and 24/7 emergency towing. Serving Astoria, Queens, Brooklyn, and beyond.</p>
+          <a href="tel:9293504707" class="footer__phone">(929) 350-4707</a>
+          <div class="footer__address">23-54 Brooklyn Queens Expy W<br />Astoria, NY 11103</div>
+        </div>
+        <div>
+          <div class="footer__col-title">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="towing.html">24/7 Towing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html#collision">Collision Repair</a></li>
+            <li><a href="services.html#paint">Auto Body &amp; Paint</a></li>
+            <li><a href="services.html#tinting">Window Tinting</a></li>
+            <li><a href="services.html#dents">Dent Removal</a></li>
+            <li><a href="services.html#glass">Glass Repair</a></li>
+            <li><a href="services.html#detailing">Detailing</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Hours</div>
+          <div class="footer__hours-row js-hours-row" data-day="1"><span>Monday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="2"><span>Tuesday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="3"><span>Wednesday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="4"><span>Thursday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="5"><span>Friday</span><span>8am – 6pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="6"><span>Saturday</span><span>9am – 4pm</span></div>
+          <div class="footer__hours-row js-hours-row" data-day="0"><span>Sunday</span><span>Towing Only</span></div>
+          <div style="margin-top: 1rem; font-size: 0.8rem; color: var(--accent);">🚨 Towing: 24/7 Always</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copy">© 2025 Rods AutoWorks. All rights reserved.</div>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Google">G</a>
+        </div>
+        <div class="footer__credit">Built by <a href="https://levainestudio.com" target="_blank" rel="noopener">Levaine Studio</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-label="Image lightbox">
+    <img class="lightbox__img" src="" alt="" />
+    <button class="lightbox__close" aria-label="Close">✕</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
